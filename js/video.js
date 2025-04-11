@@ -77,8 +77,8 @@ window.addEventListener("load", function() {
     video.loop = false;
     console.log("Auto play and loop are set to false");
 
-    // Initialize volume display, tried again
-    document.querySelector("#volume").textContent = (video.volume * 100) + "%";
+    // Initialize volume display, this line was supposed to stay uncommented
+    // document.querySelector("#volume").textContent = (video.volume * 100) + "%";
 
     document.querySelector("#play").addEventListener("click", function() {
         console.log("Play Video");
