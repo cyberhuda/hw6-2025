@@ -109,13 +109,14 @@ window.addEventListener("load", function() {
         console.log("Current location: " + video.currentTime);
     });
 	// From AG: -3: Video should be muted. Changed to this now
-    document.querySelector("#mute").addEventListener("click", function() {
-        if (video.muted) {
+	document.querySelector("#mute").addEventListener("click", function() {
+        console.log("Mute Video");
+        if (video.muted == true) {
             video.muted = false;
-            this.textContent = "Mute";
+            document.querySelector("#mute").innerHTML = "Mute";
         } else {
             video.muted = true;
-            this.textContent = "Unmute";
+            document.querySelector("#mute").innerHTML = "Unmute";
         }
     });
 
